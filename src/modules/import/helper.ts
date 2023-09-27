@@ -6,8 +6,6 @@ import * as Papa from "papaparse";
 import { format, parse } from "date-fns";
 import { v4 as uuidv4 } from "uuid";
 import * as LogHelper from "./log/helper";
-import * as NoteHelper from "../note/helper";
-import * as NotelinkHelper from "../notelink/helper";
 
 const refDate = new Date();
 
@@ -20,12 +18,12 @@ export const deleteTransaction = async (
 };
 
 export const exportData = async (space: string, userId: string) => {
-  const note = await NoteHelper.getNote(space);
-  const notelink = await NotelinkHelper.getNotelink(space);
+  // const note = await NoteHelper.getNote(space);
+  // const notelink = await NotelinkHelper.getNotelink(space);
 
   const response = {
-    note,
-    notelink
+    // note,
+    // notelink
   }
 
   return response;
