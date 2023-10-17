@@ -28,7 +28,6 @@ export const authorizeApiOneauth = async (req: any, res: any, next: any) => {
     req.user = data.claims;
     next();
   } catch (err) {
-    console.log(err);
     return res.sendStatus(401);
   }
 };
@@ -57,7 +56,6 @@ export const authorizeApi = async (req: any, res: any, next: any) => {
     req.user = data.claims;
     next();
   } catch (err) {
-    console.log(err);
     return res.sendStatus(401);
   }
 };

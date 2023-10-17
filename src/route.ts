@@ -13,5 +13,6 @@ require("./modules/user/invite/route")(router);
 require("./modules/company/route")(router);
 require("./modules/import/route")(router);
 require("./modules/import/log/route")(router);
+require("./modules/investment/route")(router);
 
 module.exports = router;
