@@ -4,8 +4,8 @@ const Schema = mongoose.Schema;
 const investmentSchema = new Schema(
   {
     name: { type: String },
-    kakeibo: { type: String },
-    transactionId: { type: String },
+    type: { type: String },
+    amount: { type: Number },
   },
   { timestamps: true }
 );

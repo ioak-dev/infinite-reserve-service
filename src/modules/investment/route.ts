@@ -4,8 +4,8 @@ import { updateInvestment, getInvestment } from "./service";
 const selfRealm = 100;
 
 module.exports = function (router: any) {
-  router.put("/investment/:space", authorize, updateInvestment);
-  router.get("/investment/:space", authorize, getInvestment);
+  router.put("/investment/:space", authorizeApi, updateInvestment);
+  router.get("/investment/:space", authorizeApi, getInvestment);
   // router.post("/auth/token", issueToken);
   // router.get("/auth/token/decode", authorizeApi, decodeToken);
   // router.post("/auth/logout", logout);
